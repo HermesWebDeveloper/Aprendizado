@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Meu Formulário</title>
+    </head>
+    <body>
+        <h1>Praticando Formulários</h1>
+        <hr>
+        <h2>Formulário 1</h2>
+        <form>
+            <label for="fname">Primeiro nome:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Segundo nome:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+
+            <p>Selecione sua linguagem favorita:</p>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label><br>
+
+            <p>Quais linguagem você domina?</p>
+            <input type="checkbox" id="c" name="habilidades" value="C">
+            <label for="c">C</label><br>
+            <input type="checkbox" id="python" name="habilidades" value="Python">
+            <label for="python">Python</label><br>
+            <input type="checkbox" id="php" name="habilidades" value="PHP">
+            <label for="php">PHP</label><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+        <hr>
+        <h2>Formulário 2</h2>
+        <form>
+            <p>Selecione a hora:</p>
+            <input type="time">
+
+            <p>Selecione a cor:</p>
+            <input type="color"><br>
+
+            <p></p>
+            <label for="frutas">Selecione a fruta:</label>
+            <select id="frutas" name="frutas">
+                <option value="maca">Maçã</option>
+                <option value="Banana">Banana</option>
+                <option value="Pera">Pera</option>
+                <option value="Morango">Morango</option>
+            </select> <br><br>
+
+            <input type="submit">
+        </form>
+        <hr>
+        <h2>Formulário 3 (Explicativo)</h2>
+        <form>
+            <h3>Tipos de classificação <code style="color: red;">input</code>:</h3>
+            <p>
+                Texto (text): <input type="text"><br><br>
+
+                Selecionar opções (checkbox): <input type="checkbox"><br><br>
+
+                Cor (color): <input type="color"><br><br>
+
+                Hora (time): <input type="time"><br><br>
+
+                Selecionar uma opção (radio): <input type="radio"><br><br>
+
+                Data (date): <input type="date"><br><br>
+
+                E-mail (email): <input type="email"><br><br>
+
+                Senha (password): <input type="password"><br><br>
+
+                Botão de envio (submit): <input type="submit"><br><br>
+
+                Anexar arquivo (file): <input type="file"><br><br>
+
+                Nível (range): <input type="range"><br><br>
+
+                Telefone (tel): <input type="tel"><br><br>
+            </p>
+        </form>
+    </body>
+</html>

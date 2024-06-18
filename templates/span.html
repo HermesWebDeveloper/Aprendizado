@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo de <span></title>
+    </head>
+    <body>
+        <p>Este é um <span id="texto">texto</span> que será manipulado com JavaScript.</p>
+        <button onclick="alterarTexto()">Alterar Texto</button>
+        <button onclick="textoOriginal()">Retornar Texto</button>
+
+        <script>
+            function alterarTexto() {
+                document.getElementById("texto").innerHTML = "novo texto";
+            }
+        </script>
+        <script>
+            function textoOriginal() {
+                document.getElementById("texto").innerHTML = "texto";
+            }
+        </script>
+    </body>
+</html>
