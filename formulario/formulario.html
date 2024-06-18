@@ -7,12 +7,15 @@
         <h1>Praticando Formulários</h1>
         <hr>
         <h2>Formulário 1</h2>
-        <form>
-            <label for="fname">Primeiro nome:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Segundo nome:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-
+        <form action="" target="_blank" method="get" autocomplete="on">
+            <fieldset>
+                <legend>Sobre você: </legend>
+                <label for="fname">Primeiro nome:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Segundo nome:</label><br>
+                <input type="text" id="lname" name="lname"><br>    
+            </fieldset>
+            
             <p>Selecione sua linguagem favorita:</p>
             <input type="radio" id="html" name="fav_language" value="HTML">
             <label for="html">HTML</label><br>
@@ -29,6 +32,13 @@
             <input type="checkbox" id="php" name="habilidades" value="PHP">
             <label for="php">PHP</label><br><br>
 
+            <button onclick="alert('Hello, world')">Click me!</button>
+
+            <p>Fale um pouco sobre sua história com a programação:</p>
+            <textarea name="message" rows="10" cols="30">
+
+            </textarea><br><br>
+
             <input type="submit" value="Enviar">
         </form>
         <hr>
@@ -42,11 +52,12 @@
 
             <p></p>
             <label for="frutas">Selecione a fruta:</label>
-            <select id="frutas" name="frutas">
+            <select id="frutas" name="frutas" size="4" multiple>
                 <option value="maca">Maçã</option>
                 <option value="Banana">Banana</option>
                 <option value="Pera">Pera</option>
-                <option value="Morango">Morango</option>
+                <option value="Morango" selected>Morango</option>
+                <option value="Pera">Uva</option>
             </select> <br><br>
 
             <input type="submit">
@@ -72,6 +83,16 @@
 
                 Senha (password): <input type="password"><br><br>
 
+                Lista suspensa (datalist): <input list="browsers">
+                
+                <datalist id="browsers">
+                    <option value="Edge">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist><br><br>
+
                 Botão de envio (submit): <input type="submit"><br><br>
 
                 Anexar arquivo (file): <input type="file"><br><br>
@@ -80,6 +101,18 @@
 
                 Telefone (tel): <input type="tel"><br><br>
             </p>
+        </form>
+        <hr>
+        <h2>Formulário 4 (Scripts)</h2>
+        <form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            0
+            <input type="range"  id="a" name="a" value="50">
+            100 +
+            <input type="number" id="b" name="b" value="50">
+            =
+            <output name="x" for="a b"></output>
+            <br><br>
+            <input type="submit">
         </form>
     </body>
 </html>
